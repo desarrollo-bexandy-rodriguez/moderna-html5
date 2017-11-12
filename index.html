@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sitio en Mantenimiento</title>
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.pack.js"></script>
+<script type="text/javascript" src="js/jquery.countdown.js"></script>
+<script type="text/javascript" src="js/jcarousellite1.0.1_min.js"></script>
+
+<!-- jquery countdown-->
+<script type="text/javascript">
+$(function () {
+var austDay = new Date("July 31, 2015 00:01:00");
+    $('#defaultCountdown').countdown({until: austDay, layout: '{dn} {dl}, {hn} {hl}, {mn} {ml}, and {sn} {sl}'});
+    $('#year').text(austDay.getFullYear());
+    });
+</script>
+
+<!-- jquery slider -->
+<script type="text/javascript">
+
+$(function() {
+    $("#slidertext").jCarouselLite({
+        btnNext: ".next",
+        btnPrev: ".prev"
+    });
+});
+
+</script>
+
+<!--script for IE6-image transparency recover-->
+<!--[if IE 6]>
+<script type="text/javascript" src="js/DD_belatedPNG_0.0.7a-min.js"></script>
+<script>
+  /* EXAMPLE */
+  DD_belatedPNG.fix('#logo img,#main,.counter,.twitter,.flickr,.facebook,.youtube,.skype,.stumbleupon, #submit,.prev img,.next img,#email');
+  
+</script>
+<![endif]--> 
+
+</head>
+
+<body>
+
+
+<div class="container">
+	
+    <div id="header">
+    
+    	<div id="logo">
+        	<a href="index.html"><img src="images/logo.png" alt="logo"/></a>
+        </div><!--end logo-->
+            
+        <div id="contact_details">
+        	<p><a href="#">bexandy@gmail.com</a></p>
+			<p><a href="#">teléfono : +58-426-564-8273 / +58-269-248-7645</a></p>
+		</div><!--end contact details-->     
+                
+	</div><!--end header-->
+              <div style="clear:both"></div> 
+              
+	<div id="main">
+
+		 <div id="content">
+                    
+              <div class="text">
+              <h2>Este sitio está en mantenimiento</h2>
+              </div><!--end text-->
+                  
+              <div class="counter">
+              <h3>Tiempo estimado de duración del mantenimiento:</h3>
+              <div id="defaultCountdown"></div>
+
+         </div><!--end counter-->
+                 
+         <div class="details">
+              <!--slider prev button-->    
+            <a class="prev" href="#"><img src="images/prev.png" alt="" /> 
+            </a>
+
+                  <div id="sliderwrap">
+                  		<div id="slidertext"><!-- The slider -->
+                            
+                                <ul>
+                                     <li>
+                                         <h3>Usted puede encontrarnos en: </h3>
+                                         <div class="social">
+                                         <a href="http://www.twiter.com/BexandyR" class="twitter">Twitter</a>
+                                         <a href="http://www.facebook.com/Bexandy.Rodriguez" class="facebook">Facebook</a>
+                                         </div>
+                                     </li><!-- Slider item -->
+									 
+                                	 <li>
+                                        <h3>Escriba su correo electrónico para recibir las actualizaciones!</h3>
+										<form method="post" id="subscribeform" action="emailform.php">
+											<div id="email_input">
+												<input name="email" type="text" size="30" value="Escriba Su E-mail" onfocus="if(this.value=='Escriba Su E-mail'){this.value=''};" 	onblur="if(this.value==''){this.value='Escriba Su E-mail'};" id="email" /> 
+												<input type="submit" id="submit" value="ENVIAR" size="80" />
+											</div>
+										</form>
+                                 	</li><!-- Slider item -->
+									
+
+                                 
+                                 	<li>
+                                         <h3>bexandyrodriguez.com.ve</h3>
+                                         <p>Inversiones Bexandy Rodriguez, F.C. </p>
+                                        
+                                 
+                                	 </li><!-- Slider item -->
+                            
+                                </ul>
+                            
+             	 </div><!-- End of slidertext -->
+    
+              </div><!-- End of sliderwrap -->
+
+					<!--slider next button-->
+             	<a class="next" href="#"><img src="images/next.png" alt=""/></a>
+
+                  
+                  </div><!--end details-->  
+                </div><!--end content-->
+            <p class="copyright">Copyright &copy;2015 bexandyrodriguez.com.ve. Todos los derechos reservados</p>
+</div><!--end main-->
+
+</div><!--end class container-->
+
+</body>
+
+</html>
